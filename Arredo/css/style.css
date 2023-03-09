@@ -81,6 +81,7 @@ nav a:hover::before {
 section {
     background-image: url(http://www.arredamentibleve.com/wp-content/uploads/2022/03/arredamento-gotico-scaled.jpg);
     height: 100vh;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -207,7 +208,7 @@ section {
     position: absolute;
     top: 71%;
     left: -35%;
-    transition: .7s;
+    transition: .5s;
 }
 
 .image:hover img {
@@ -219,12 +220,18 @@ section {
 }
 
 @media(max-width:576px) {
+
+    header {
+        background-color: #000;
+    }
+
     nav a {
         display: none;
     }
 
     .logo img {
         width: 100%;
+        margin-left: 15%;
     }
 
     .icons {
@@ -236,7 +243,6 @@ section {
         color: #fff;
         font-size: 25px;
         margin-top: 17px;
-        margin-right: 110px;
     }
 
     .centertext a {
