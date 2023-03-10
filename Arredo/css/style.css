@@ -167,7 +167,6 @@ section {
 }
 
 .box a {
-    display: block;
     color: #000;
     text-decoration: none;
     transition: .4s;
@@ -196,29 +195,46 @@ section {
     left: 16px;
 }
 
-.overlay a {
+.overlay,.lay span{
     text-decoration: none;
     color: #fff;
 
 }
 
-.overlay {
+.overlay,.lay {
     background-color: #000;
-    padding: 10px 20px;
+    cursor: pointer;
+    padding: 8px 16px;
     position: absolute;
     top: 71%;
-    left: -35%;
+    left: -42%;
     transition: .5s;
 }
 
+.overlay a{
+    color: #fff;
+    font-size: 17px;
+    margin-left: 12px;
+}
+
+
 .image:hover img {
-    transform: scale(1.06);
+    transform: scale(1.04);
 }
 
 .image:hover .overlay {
+    left: -23%;
+}
+
+.image:hover .lay {
     left: 0;
 }
 
+
+.overlay:hover{
+ left: 0!important;
+   
+}
 @media(max-width:576px) {
 
     header {
